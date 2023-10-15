@@ -6,15 +6,13 @@ layout {
         }
         children
     }
-    tab name="close embrace" split_direction="vertical" {
+    tab name="missed me" split_direction="vertical" {
         pane {
 			command "hx"
-			args "abalone.txt" 
             size "77%"
 		}
 		pane split_direction="horizontal" {
 			pane command="hx" {
-				args "conveyor.txt"
 			}
 			pane split_direction="vertical" command="watch" {
 				args "-n 1"  "-p"  "date \"+'%Y|%m-%d;%H:%M_%S (%Y day:%j/366 week:%U/53 weekday:%u/7 (%A) (%B)'\""

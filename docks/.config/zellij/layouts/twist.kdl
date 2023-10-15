@@ -11,11 +11,6 @@ layout {
         }
         children
     }
-    cus name="soul" cwd="soul" {
-        pane command="zellij" {
-			args "-l" "soul"
-		}
-    }
     cus name="orph" cwd="jf/justfiles" {
         pane command="zellij" {
 			args "-l" "c"
