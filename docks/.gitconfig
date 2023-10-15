@@ -1,0 +1,41 @@
+[user]
+	email = fluidvanadium@pm.me
+	name = fluidvanadium
+	signingkey = F4BC9A16DD9FC2A24795A62114321ADED8C9FB47
+[alias]
+	somit = commit -S -m
+	somut = commit -S -a -m
+	somat = !git add -A && git somit
+	comit = commit -m
+	comut = commit -a -m
+	comat = !git add -A && git comit
+	merse = merge --signoff
+	tas = tag -s
+	lon = log --oneline
+	lll = log --graph --decorate --oneline --color
+	logodopoc = log --graph --decorate --patch --color
+    llf = lolol --reflog
+	ftl = fetch --al
+    trackbranch = "!f() { : git checkout -b ; git checkout -b $1_$2 --track $1/$2; }; f"
+	newupstream = "!f() { : git push ; git push -u $1 $1_$2:$2; }; f"
+	; Explicit is better than implicit.  If we want to merge
+	; we should do so ourselves.
+	pull = pull --ff-only
+	rebas = rebase --exec 'git commit --amend --no-edit -n -S'
+	puff = push fluid -f
+[commit]
+	gpgsign = true
+[credential]
+	helper = store
+[diff]
+	tool = meld
+[difftool]
+	prompt = false 
+[merge]
+	conflictStyle = diff3
+[core]
+	editor = hx
+[init]
+	defaultBranch = dev
+[push]
+	default = current

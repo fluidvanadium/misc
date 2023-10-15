@@ -1,0 +1,45 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane //command="zellij"
+    }
+    tab_template name="cus" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        children
+    }
+    cus name="soul" cwd="soul" {
+        pane command="zellij" {
+			args "-l" "soul"
+		}
+    }
+    cus name="orph" cwd="jf/justfiles" {
+        pane command="zellij" {
+			args "-l" "c"
+		}
+    }
+    cus name="ZINGO" cwd="ZINGO" {
+        pane command="zellij" {
+			args "-l" "ZINGO"
+		}
+    }
+    cus name="tool" cwd="dotfiles" {
+        pane command="zellij" {
+			args "-l" "BRICK"
+		}
+    }
+}
+keybinds {
+    normal clear-defaults=true {
+        bind "Ctrl q" { SwitchToMode "Tab"; }
+    }
+    tab {
+        unbind "Ctrl t"
+        unbind "Ctrl q"
+        bind "Enter" { SwitchToMode "Normal"; }
+        bind "p" { SwitchToMode "Pane"; }
+    }
+}

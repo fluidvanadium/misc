@@ -1,0 +1,21 @@
+layout {
+    default_tab_template {
+        // the default zellij tab-bar and status bar plugins
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        children
+    }
+    tab name="root" {
+        pane {
+            command "sudo"
+            args "su"
+        }
+    }
+    tab name="BRICK" {
+        pane {
+            command "hx"
+            args "~/brick"
+        }
+    }
+}

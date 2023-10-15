@@ -1,0 +1,52 @@
+layout {
+	tab_template name="wj" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+		pane {
+			// command "hx"
+			// args "standup.txt"
+		}
+	}
+    wj name="wj"
+    tab_template name="machine" split_direction="horizontal" {
+        // the default zellij tab-bar and status bar plugins
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+		pane split_direction="vertical" {
+			pane
+			pane
+			pane
+			pane
+			pane split_direction="horizontal" {
+				pane
+				pane
+				pane
+				pane
+			}
+		}
+    }
+    machine name="mobile-rt" cwd="nzingo-mobile"
+    machine name="mobile-dev" cwd="_nz-dev"
+    machine name="lib-rt" cwd="tzingolib"
+    machine name="lib-dev" cwd="_tz-dev"
+    default_tab_template split_direction="horizontal" {
+        // the default zellij tab-bar and status bar plugins
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+		pane split_direction="vertical" {
+			pane
+			pane
+			pane
+			pane
+			pane split_direction="horizontal" {
+				pane
+				pane
+				pane
+				pane
+			}
+		}
+    }
+}
