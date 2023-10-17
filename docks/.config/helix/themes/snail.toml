@@ -25,6 +25,7 @@
 "keyword" = "#006699"
 "operator" = "#887700"
 "function" = "#ff9b00"
+"function.macro" = "#cfcf00"
 "tag" = "#ff6060"
 "namespace" = "#ff6060"
 "special" = "#ffffff"
@@ -76,9 +77,9 @@
 # "ui.virtual.inlay-hint.parameter" = "#ffffff"
 # "ui.virtual.inlay-hint.type" = "#ffffff"
 # "ui.virtual.wrap" = "#ffffff"
-# "ui.menu" = "#ffffff"
-# "ui.menu.selected" = "#ffffff"
-# "ui.menu.scroll" = "#ffffff"
+"ui.menu" = { fg = "#cccccc", modifiers = ["italic"] }
+"ui.menu.selected" = { fg = "#cc00cc", modifiers =  ["italic"] }
+"ui.menu.scroll" = { fg = "#cccccc", modifiers = ["italic"] }
 "ui.selection" = { modifiers = ["reversed"] }
 "ui.selection.primary" = { bg = "#422424", modifiers = ["reversed"] }
 # "ui.highlight" = "#ffffff"
@@ -86,8 +87,8 @@
 # "ui.cursorline.secondary" = "#ffffff"
 # "ui.cursorcolumn.primary" = "#ffffff"
 # "ui.cursorcolumn.secondary" = "#ffffff"
-# "warning" = "#ffffff"
-# "error" = "#ffffff"
+"warning" = "#ff9999"
+"error" = "#fc0000"
 # "info" = "#ffffff"
 # "hint" = "#ffffff"
 "diagnostic" = { modifiers = ["underlined"] }
