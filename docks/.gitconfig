@@ -1,7 +1,7 @@
 [user]
-	email = fluidvanadium@pm.me
+	email = fluidvanadium@zingolabs.org
 	name = fluidvanadium
-	signingkey = F4BC9A16DD9FC2A24795A62114321ADED8C9FB47
+	signingkey = D25FF64056B88C25
 [alias]
 	somit = commit -S -m
 	somut = commit -S -a -m

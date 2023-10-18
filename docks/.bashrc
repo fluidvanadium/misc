@@ -181,9 +181,9 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 # export LD_LIBRARY_PATH=/home/sava/usr/lib:$LD_LIBRARY_PATH
 # export PATH=$PATH:"/home/sava/.steam/steam/steamapps/common/wesnoth"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # the beginning of straight my config
 
@@ -191,4 +191,4 @@ export GPG_TTY=$(tty)
 export EDITOR=hx
 
 export PATH=$PATH:/home/architect/.local/bin
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
