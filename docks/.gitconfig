@@ -24,7 +24,6 @@
 	rebas = rebase --exec 'git commit --amend --no-edit -n -S'
 	puff = push fluid -f
 [commit]
-	gpgsign = true
 [credential]
 	helper = store
 [diff]
