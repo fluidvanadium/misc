@@ -3,6 +3,7 @@ theme = "snail"
 [editor]
 middle-click-paste = true
 auto-pairs = false
+true-color = true
 
 [editor.soft-wrap]
 enable = true

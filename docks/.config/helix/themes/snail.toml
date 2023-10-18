@@ -73,13 +73,13 @@
 # "ui.virtual.ruler" = "#ffffff"
 # "ui.virtual.whitespace" = "#ffffff"
 # "ui.virtual.indent-guide" = "#ffffff"
-# "ui.virtual.inlay-hint" = { modifiers = ["italic"] }
+"ui.virtual.inlay-hint" = { fg = "#123456", modifiers = ["italic"] }
 # "ui.virtual.inlay-hint.parameter" = "#ffffff"
 # "ui.virtual.inlay-hint.type" = "#ffffff"
 # "ui.virtual.wrap" = "#ffffff"
-"ui.menu" = { fg = "#cccccc", modifiers = ["italic"] }
-"ui.menu.selected" = { fg = "#cc00cc", modifiers =  ["italic"] }
-"ui.menu.scroll" = { fg = "#cccccc", modifiers = ["italic"] }
+"ui.menu" = { fg = "#cccccc" }
+"ui.menu.selected" = { fg = "#cc9bcc", modifiers =  ["bold"] }
+"ui.menu.scroll" = { fg = "#ccaccc" }
 "ui.selection" = { modifiers = ["reversed"] }
 "ui.selection.primary" = { bg = "#422424", modifiers = ["reversed"] }
 # "ui.highlight" = "#ffffff"
@@ -91,9 +91,9 @@
 "error" = "#fc0000"
 # "info" = "#ffffff"
 # "hint" = "#ffffff"
+# "hint" = { modifiers = ["italic"] }
 "diagnostic" = { modifiers = ["underlined"] }
 "diagnostic.error" = { underline = { style = "curl", color = "#cc0400" } }
-# "diagnostic.hint" = "#ffffff"
-# "diagnostic.info" = "#ffffff"
+# "diagnostic.hint" = { modifiers = ["italic"] }
+# "diagnostic.info" = { modifiers = ["italic"] }
 # "diagnostic.warning" = "#ffffff"
-# "diagnostic.error" = "#ffffff"
