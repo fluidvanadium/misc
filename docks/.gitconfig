@@ -9,7 +9,7 @@
 	comit = commit -m
 	comut = commit -a -m
 	comat = !git add -A && git comit
-	merse = merge --signoff
+	merse = merge -S
 	tas = tag -s
 	lon = log --oneline
 	lll = log --graph --decorate --oneline --color
