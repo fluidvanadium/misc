@@ -6,9 +6,11 @@
 	somit = commit -S -m
 	somut = commit -S -a -m
 	somat = !git add -A && git somit
+	somend = git commit --amend -S -m
 	comit = commit -m
 	comut = commit -a -m
 	comat = !git add -A && git comit
+	commend = commit --amend
 	merse = merge -S
 	tas = tag -s
 	lon = log --oneline

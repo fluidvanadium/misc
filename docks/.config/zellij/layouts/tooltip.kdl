@@ -5,6 +5,12 @@ layout {
     }
 }
 keybinds {
-    normal clear-defaults=true {
+    normal {
+        unbind "Ctrl g"
+        bind "Ctrl l" { SwitchToMode "locked"; }
+    }
+    locked {
+        unbind "Ctrl g"
+        bind "Ctrl l" { SwitchToMode "normal"; }
     }
 }
