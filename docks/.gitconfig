@@ -14,6 +14,7 @@
 	merse = merge -S
 	tas = tag -s
 	lon = log --oneline
+	len = log --oneline -n
 	lll = log --graph --decorate --oneline --color
 	logodopoc = log --graph --decorate --patch --color
     llf = lolol --reflog

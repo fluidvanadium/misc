@@ -192,3 +192,5 @@ export EDITOR=hx
 
 export PATH=$PATH:/home/architect/.local/bin
 # source /usr/share/nvm/init-nvm.sh
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fv/.cargo/env:/home/fv/.cargo/bin:/home/fv/bin:/home/fv/android/cmdline-tools/latest/bin:/home/architect/.local/bin:/home/fv/.cargo/env:/home/fv/.cargo/bin:/home/fv/bin:/home/fv/android/cmdline-tools/latest/bin:/home/architect/.local/bin:/usr/local/go/bin:/home/fv/GoProjects/bin
+export GOPATH=/home/fv/GoProjects

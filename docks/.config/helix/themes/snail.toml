@@ -23,7 +23,7 @@
 "punctuation.delimiter" = { fg = "#ffff74", modifiers = ["bold"] }
 "punctuation.bracket" = { fg = "#ffe584", modifiers = ["bold"] }
 "keyword" = "#006699"
-"operator" = "#887700"
+"operator" = { fg = "#fe325b", modifiers = [] }
 "function" = "#ff9b00"
 "function.macro" = "#cfcf00"
 "tag" = "#ff6060"
