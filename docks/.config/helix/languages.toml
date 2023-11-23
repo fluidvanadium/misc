@@ -1,6 +1,0 @@
-[[language]]
-
-name = "rust"
-
-[language.config]
-cargo.features = ["test"]
