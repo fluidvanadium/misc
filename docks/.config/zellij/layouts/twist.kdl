@@ -16,14 +16,14 @@ layout {
 			args "-l" "c"
 		}
     }
-    cus name="ZINGO" cwd="ZINGO" {
-        pane command="zellij" {
-			args "-l" "ZINGO"
-		}
-    }
     cus name="tool" cwd="dotfiles" {
         pane command="zellij" {
 			args "-l" "BRICK"
+		}
+    }
+    cus name="ZINGO" cwd="ZINGO" {
+        pane command="zellij" {
+			args "-l" "ZINGO"
 		}
     }
 }
