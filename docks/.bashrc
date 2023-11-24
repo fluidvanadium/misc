@@ -13,12 +13,6 @@ date >> ~/log
 export PATH=$PATH:"$HOME/.cargo/env"
 export PATH=$PATH:"$HOME/.cargo/bin"
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-    echo "startxing" >> ~/log
-    pkill Xorg
-    exec startx
-fi
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -190,7 +184,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export GPG_TTY=$(tty)
 export EDITOR=hx
 
-export PATH=$PATH:/home/architect/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 # source /usr/share/nvm/init-nvm.sh
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fv/.cargo/env:/home/fv/.cargo/bin:/home/fv/bin:/home/fv/android/cmdline-tools/latest/bin:/home/architect/.local/bin:/home/fv/.cargo/env:/home/fv/.cargo/bin:/home/fv/bin:/home/fv/android/cmdline-tools/latest/bin:/home/architect/.local/bin:/usr/local/go/bin:/home/fv/GoProjects/bin
-export GOPATH=/home/fv/GoProjects
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:/usr/local/go/bin:$HOME/GoProjects/bin
+export GOPATH=$HOME/GoProjects
