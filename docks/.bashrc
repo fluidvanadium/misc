@@ -184,7 +184,5 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export GPG_TTY=$(tty)
 export EDITOR=hx
 
-export PATH=$PATH:$HOME/.local/bin
-# source /usr/share/nvm/init-nvm.sh
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:/usr/local/go/bin:$HOME/GoProjects/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/:$HOME/GoProjects/bin
 export GOPATH=$HOME/GoProjects
