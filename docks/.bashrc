@@ -160,17 +160,7 @@ function set_color_prompt {
 }
 export PROMPT_COMMAND=set_color_prompt
 
-export PATH=$PATH:$HOME/bin
-
 export HELIX_RUNTIME="$HOME/gits/helix/runtime"
-
-export ANDROID_SDK_ROOT=$HOME/android
-# export ANDROID_HOME=$HOME/ZINGO/zingoe2etestenv
-# export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-# export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
-# export PATH=$PATH:$HOME/adb/platform-tools
-
 
 # export LD_LIBRARY_PATH=/home/sava/usr/lib:$LD_LIBRARY_PATH
 # export PATH=$PATH:"/home/sava/.steam/steam/steamapps/common/wesnoth"
@@ -184,5 +174,21 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export GPG_TTY=$(tty)
 export EDITOR=hx
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/bin:$HOME/android/cmdline-tools/latest/bin:$HOME/.local/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/:$HOME/GoProjects/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.local/bin:$HOME/bin
+export PATH=$PATH:/snap/bin
+export PATH=$PATH:$HOME/.cargo/env:$HOME/.cargo/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/
+
 export GOPATH=$HOME/GoProjects
+export PATH=$PATH:$HOME/GoProjects/bin:/usr/local/go/bin
+
+export JAVA_HOME=$HOME/java_home
+export PATH=$PATH:$JAVA_HOME/bin
+
+export ANDROID_SDK_ROOT=$HOME/android
+export ANDROID_HOME=$HOME/android
+
+export PATH=$PATH:$HOME/android/cmdline-tools/latest/bin
+export PATH=$PATH:$HOME/android/platform-tools
+export PATH=$PATH:$HOME/android/emulator
+
+
