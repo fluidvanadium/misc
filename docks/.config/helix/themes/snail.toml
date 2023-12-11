@@ -35,6 +35,7 @@
 "diff.minus" = "#fd0000"
 "diff.delta" = "#aaab00"
 "diff.delta.moved" = "00ab8f"
+"ui.statusline" = { fg = "foreground", bg = "background_dark" }
 
 #interface
 
@@ -97,3 +98,6 @@
 # "diagnostic.info" = "#ffffff"
 # "diagnostic.warning" = "#ffffff"
 # "diagnostic.error" = "#ffffff"
+[palette]
+foreground = "#f8f8f2"
+background_dark = "#21222c"
