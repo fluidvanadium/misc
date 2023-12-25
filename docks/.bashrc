@@ -191,4 +191,8 @@ export PATH=$PATH:$HOME/android/cmdline-tools/latest/bin
 export PATH=$PATH:$HOME/android/platform-tools
 export PATH=$PATH:$HOME/android/emulator
 
+function md() {
+  mkdir $1
+  cd $1
+}
 

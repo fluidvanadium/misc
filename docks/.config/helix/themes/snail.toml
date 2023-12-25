@@ -2,7 +2,7 @@
 #code
 
 "attribute" = "#ffff00"
-"type" = "#0000ff"
+"type" = "#8080ff"
 "type.builtin" = "#899aff"
 "type.enum" = "#6d00ff"
 "type.enum.variant" = "#8d00fc"
@@ -17,14 +17,14 @@
 "constant.numeric.float" = "#c48330"
 "string" = "#44b800"
 "comment" = "#4f4f4f"
-"variable" = "#9ca0f0"
+"variable" = "#e9a0f0"
 "label" = "#ff00ff"
 "punctuation" = { fg = "#ffff74", modifiers = ["bold"] }
 "punctuation.delimiter" = { fg = "#ffff74", modifiers = ["bold"] }
 "punctuation.bracket" = { fg = "#ffe584", modifiers = ["bold"] }
-"keyword" = "#006699"
+"keyword" = "#40a6d9"
 "operator" = { fg = "#fe325b", modifiers = [] }
-"function" = "#ff9b00"
+"function" = "#ffbb4b"
 "function.macro" = "#cfcf00"
 "tag" = "#ff6060"
 "namespace" = "#ff6060"
