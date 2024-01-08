@@ -83,6 +83,7 @@
     },
     "clock": {
         // "timezone": "Iceland",
+        "interval": 1,
         "format": "{:%Y|%m-%d;%H:%M_%S (%Y day:%j/366 week:%U/53 weekday:%u/7 (%A) (%B)}",
         "format-alt": "{:%Y|%m-%d;%H:%M_%S (%Y day:%j/366 week:%U/53 weekday:%u/7 (%A) (%B)}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
