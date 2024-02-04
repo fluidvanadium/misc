@@ -4,8 +4,10 @@
 	signingkey = C47646895F2455BC
 [alias]
 	somit = commit -S -m
+	sommit = commit -S
 	somut = commit -S -a -m
 	somat = !git add -A && git somit
+	sommat = !git add -A && git sommit
 	somend = commit --amend -S -m
 	somand = !git add -A && git commit --amend -S -m
 	comit = commit -m
