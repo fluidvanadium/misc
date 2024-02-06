@@ -3,17 +3,28 @@
 	name = fluidvanadium
 	signingkey = C47646895F2455BC
 [alias]
-	somit = commit -S -m
-	sommit = commit -S
-	somut = commit -S -a -m
-	somat = !git add -A && git somit
-	sommat = !git add -A && git sommit
-	somend = commit --amend -S -m
-	somand = !git add -A && git commit --amend -S -m
+	commit = commit
+	commut = commit -a
+	commat = !git add -A && git commit
+	commend = commit --amend
+	command = !git add -A && git commit --amend
 	comit = commit -m
 	comut = commit -a -m
 	comat = !git add -A && git comit
-	commend = commit --amend
+	comend = commit --amend -m
+	comand = !git add -A && git commit --amend -m
+	sommit = commit -S
+	sommut = commit -S -a
+	sommat = !git add -A && git sommit
+	sommend = commit --amend -S
+	sommand = !git add -A && git commit --amend -S
+	somit = commit -S -m
+	somut = commit -S -a -m
+	somat = !git add -A && git somit
+	somend = commit --amend -S -m
+	somand = !git add -A && git commit --amend -S -m
+	
+	
 	merse = merge -S
 	tas = tag -s
 	lon = log --oneline
