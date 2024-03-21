@@ -26,6 +26,11 @@ layout {
 			args "-l" "ZINGO"
 		}
     }
+    cus name="game" {
+        pane command="zellij" {
+			args "-l" "ZINGO"
+		}
+    }
 }
 keybinds {
     normal clear-defaults=true {

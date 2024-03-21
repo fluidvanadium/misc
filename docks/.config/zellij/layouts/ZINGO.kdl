@@ -18,7 +18,10 @@ layout {
         }
 		pane split_direction="vertical" {
 			pane
-			pane
+			pane {
+				command "hx"
+				args "wj_awareness_checklist.txt"
+			}
 		}
     pane size=2 borderless=true {
         plugin location="zellij:status-bar"
