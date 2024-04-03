@@ -18,4 +18,10 @@ layout {
             args "~/brick"
         }
     }
+    tab name="backup" cwd="~" {
+        pane {
+            command "sudo"
+            args "./backup.sh"
+        }
+    }
 }

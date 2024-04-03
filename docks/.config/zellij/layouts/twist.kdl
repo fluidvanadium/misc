@@ -11,9 +11,9 @@ layout {
         }
         children
     }
-    cus name="orph" cwd="jf/justfiles" {
+    cus name="game" {
         pane command="zellij" {
-			args "-l" "c"
+			args "-l" "ZINGO"
 		}
     }
     cus name="tool" cwd="dotfiles" {
@@ -22,11 +22,6 @@ layout {
 		}
     }
     cus name="ZINGO" cwd="ZINGO" {
-        pane command="zellij" {
-			args "-l" "ZINGO"
-		}
-    }
-    cus name="game" {
         pane command="zellij" {
 			args "-l" "ZINGO"
 		}
