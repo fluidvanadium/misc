@@ -28,7 +28,7 @@ layout {
     }
     cus name="performer" cwd="leaves/love/performer" {
         pane command="zellij" {
-			args "-l" "ZINGO"
+			args "-l" "trifold"
 		}
     }
     cus name="ZINGO" cwd="ZINGO" {
