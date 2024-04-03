@@ -4,29 +4,12 @@ layout {
             plugin location="zellij:compact-bar"
         }
 		pane {
-			// command "hx"
-			// args "standup.txt"
 		}
-    pane size=2 borderless=true {
-        plugin location="zellij:status-bar"
-    }
+	    pane size=2 borderless=true {
+	        plugin location="zellij:status-bar"
+	    }
 	}
     wj name="wj"
-    tab_template name="machine" split_direction="horizontal" {
-        pane size=1 borderless=true {
-            plugin location="zellij:compact-bar"
-        }
-		pane split_direction="vertical" {
-			pane
-			pane {
-				command "hx"
-				args "wj_awareness_checklist.txt"
-			}
-		}
-    pane size=2 borderless=true {
-        plugin location="zellij:status-bar"
-    }
-    }
     default_tab_template split_direction="horizontal" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
@@ -36,8 +19,5 @@ layout {
 			pane size="40%"
 			pane size="20%"
 		}
-    pane size=2 borderless=true {
-        plugin location="zellij:status-bar"
-    }
     }
 }
