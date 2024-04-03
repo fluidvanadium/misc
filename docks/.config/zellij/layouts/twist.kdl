@@ -26,6 +26,11 @@ layout {
 			args "-l" "BRICK"
 		}
     }
+    cus name="performer" cwd="leaves/love/performer" {
+        pane command="zellij" {
+			args "-l" "ZINGO"
+		}
+    }
     cus name="ZINGO" cwd="ZINGO" {
         pane command="zellij" {
 			args "-l" "ZINGO"
