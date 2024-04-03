@@ -3,7 +3,14 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
-		pane {
+		pane split_direction="vertical" {
+			pane size="25%" cwd="libs/zingolib" command="cargo" {
+				args "run" "--" "--data-dir=/home/cupress/ZINGO/my_wallets/treasury/"
+			}
+			pane size="25%" command="hx" {
+				args "wj/awareness_checklist.txt"
+			}
+			pane
 		}
 	    pane size=2 borderless=true {
 	        plugin location="zellij:status-bar"
