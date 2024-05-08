@@ -205,23 +205,25 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 1
-bindsym XF86MonBrightnessUp exec sudo $HOME/brightup.sh 1
-bindsym shift+XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 16
-bindsym shift+XF86MonBrightnessUp exec sudo $HOME/brightup.sh 16
-bindsym ctrl+shift+XF86MonBrightnessDown exec sudo $HOME/brightset.sh 0
-bindsym ctrl+shift+XF86MonBrightnessUp exec sudo $HOME/brightset.sh 255
+bindsym XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 8
+bindsym XF86MonBrightnessUp exec sudo $HOME/brightup.sh 8
+bindsym shift+XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 1
+bindsym shift+XF86MonBrightnessUp exec sudo $HOME/brightup.sh 1
+bindsym ctrl+shift+XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 32 
+bindsym ctrl+shift+XF86MonBrightnessUp exec sudo $HOME/brightup.sh 32
+bindsym ctrl+XF86MonBrightnessDown exec sudo $HOME/brightset.sh 0
+bindsym ctrl+XF86MonBrightnessUp exec sudo $HOME/brightset.sh 255
 bindsym XF86AudioMute exec amixer set Master toggle
-bindsym ctrl+XF86AudioMute exec amixer set Master 0
-bindsym shift+XF86AudioMute exec amixer set Master 65536
-bindsym ctrl+XF86AudioLowerVolume exec amixer set Master 1-
-bindsym ctrl+XF86AudioRaiseVolume exec amixer set Master 1+
-bindsym XF86AudioLowerVolume exec amixer set Master 16-
-bindsym XF86AudioRaiseVolume exec amixer set Master 16+
+bindsym ctrl+XF86AudioMute exec amixer set Master 65536
+bindsym shift+XF86AudioMute exec amixer set Master 0
+bindsym XF86AudioLowerVolume exec amixer set Master 4096-
+bindsym XF86AudioRaiseVolume exec amixer set Master 4096+
 bindsym shift+XF86AudioLowerVolume exec amixer set Master 256-
 bindsym shift+XF86AudioRaiseVolume exec amixer set Master 256+
-bindsym ctrl+shift+XF86AudioLowerVolume exec amixer set Master 4096-
-bindsym ctrl+shift+XF86AudioRaiseVolume exec amixer set Master 4096+
+bindsym ctrl+shift+XF86AudioLowerVolume exec amixer set Master 16-
+bindsym ctrl+shift+XF86AudioRaiseVolume exec amixer set Master 16+
+bindsym ctrl+XF86AudioLowerVolume exec amixer set Master 0
+bindsym ctrl+XF86AudioRaiseVolume exec amixer set Master 65536
 
 #
 # Status Bar:
