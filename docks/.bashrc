@@ -129,23 +129,45 @@ shopt -s checkwinsize
 function GITBRANCH {
     if [[ `git branch 2>&1` == *"ot a git repository"* ]]
     then
+        :
+    else
+        BRANCH=`git branch | grep ^\* | sed s"/^\* //"`
+        
+        echo ${BRANCH}
+        unset -f
+    fi
+}
+function GITSTATUS {
+    if [[ `git branch 2>&1` == *"ot a git repository"* ]]
+    then
+        :
+    else
+        STATUS='[ '
+        set -f
+        for S in `git status -s | cut -c 1-2`;
+        do
+            STATUS=${STATUS}${S}' '
+        done
+        
+        echo ${STATUS}'] '
+        unset -f
+    fi
+}
+function GITCOMMIT {
+    if [[ `git branch 2>&1` == *"ot a git repository"* ]]
+    then
 	    echo No git repo
     else
-    STATUS='[ '
-    set -f
-    for S in `git status -s | cut -c 1-2`;
-    do
-        STATUS=${STATUS}${S}' '
-    done
-    BRANCH=`git branch | grep ^\* | sed s"/^\* //"`
-	echo ${BRANCH}${STATUS}']'
-    unset -f
+        COMMIT=`git show --oneline -s | sed s"/ .*//"`
+        
+        echo ${COMMIT}
+        unset -f
     fi
 }
 function set_color_prompt {
     RC=$?;
     DATE="\033[1;36m`date "+%s"` \033[0m||"
-    USERHOSTBRANCH='\033[1;34m`whoami`\033[0m \033[1;35m$(GITBRANCH)\033[0m'
+    USERHOSTBRANCH='\033[1;35m$(GITBRANCH)\033[0m\033[1;34m$(GITSTATUS)\033[0m\033[1;21m$(GITCOMMIT)\033[0m'
     if [  ${RC} -eq 0 ]
     then
         PWDRC='\033[1;32m${PWD}\033[0m\033[1;31m: ${RC} \033[0m\n$'

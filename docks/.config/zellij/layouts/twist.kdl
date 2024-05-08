@@ -21,7 +21,7 @@ layout {
 			args "-l" "BRICK"
 		}
     }
-    cus name="performer" cwd="leaves/love/performer" {
+    cus name="show" cwd="leaves/museum_plan" {
         pane command="zellij" {
 			args "-l" "trifold"
 		}
