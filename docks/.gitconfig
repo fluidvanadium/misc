@@ -28,9 +28,11 @@
 	somund = sommut --amend -m
 	somand = sommat --amend -m
 	
+	ssgs = show --show-signature -s
 	merse = merge -S
 	rebass = rebase --gpg-sign
 	rebasis = rebase --gpg-sign -i
+	chicks = cherry-pick --gpg-sign
 	tas = tag -s
 	lon = log --oneline
 	len = log --oneline -n
@@ -45,7 +47,8 @@
 	pull = pull --ff-only
 	# rebas = rebase --exec 'git commit --amend --no-edit -n -S'
 
-	flush = !cargo fmt && cargo clippy --tests --all-features && ./utils/trailing-whitespace.sh reject && git push fluid
+	cargox = "!cargo fmt && git somat 'cargo fmt' ; cargo clippy --fix --tests --all-features && git somat 'cargo clippy --fix --tests --all-features' ; ./utils/trailing-whitespace.sh reject ; git somat 'trailing whitespace clipper'"
+	puff = push -f
 [commit]
 [credential]
 	helper = store

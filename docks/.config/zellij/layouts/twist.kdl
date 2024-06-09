@@ -16,7 +16,7 @@ layout {
 			args "-l" "soul"
 		}
     }
-    cus name="game" {
+    cus name="recr" {
         pane command="zellij" {
 			args "-l" "trifold"
 		}
