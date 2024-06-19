@@ -218,3 +218,4 @@ function md() {
   cd $1
 }
 
+source /usr/share/bash-completion/completions/git
