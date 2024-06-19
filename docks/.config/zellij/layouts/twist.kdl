@@ -11,7 +11,7 @@ layout {
         }
         children
     }
-    cus name="game" {
+    cus name="recr" {
         pane command="zellij" {
 			args "-l" "trifold"
 		}
