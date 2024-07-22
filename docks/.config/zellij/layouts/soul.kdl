@@ -21,4 +21,18 @@ layout {
 		// 	}
 		// }
     }
+    tab name="abalone" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "abalone.txt"
+            size "77%"
+		}
+    }
+    tab name="todo_open" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "todo_open.txt"
+            size "77%"
+		}
+    }
 }
