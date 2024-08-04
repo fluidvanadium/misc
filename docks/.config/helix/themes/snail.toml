@@ -16,7 +16,7 @@
 "constant.numeric.integer" = "#00ff00"
 "constant.numeric.float" = "#c48330"
 "string" = "#44b800"
-"comment" = "#4f4f4f"
+"comment" = "#7f7f7f"
 "variable" = "#e9a0f0"
 "label" = "#ff00ff"
 "punctuation" = { fg = "#ffff74", modifiers = ["bold"] }
@@ -73,7 +73,7 @@
 # "ui.virtual.ruler" = "#ffffff"
 # "ui.virtual.whitespace" = "#ffffff"
 # "ui.virtual.indent-guide" = "#ffffff"
-"ui.virtual.inlay-hint" = { fg = "#123456", modifiers = ["italic"] }
+"ui.virtual.inlay-hint" = { fg = "#456789", modifiers = ["italic"] }
 # "ui.virtual.inlay-hint.parameter" = "#ffffff"
 # "ui.virtual.inlay-hint.type" = "#ffffff"
 # "ui.virtual.wrap" = "#ffffff"
