@@ -33,7 +33,8 @@
 	rebass = rebase --gpg-sign
 	rebasis = rebase --gpg-sign -i
 	chicks = cherry-pick --gpg-sign
-	tas = tag -s
+	stag = tag -s
+	smag = tag -s -m 
 	lon = log --oneline
 	len = log --oneline -n
 	lll = log --graph --decorate --oneline --color
