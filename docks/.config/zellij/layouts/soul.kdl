@@ -6,21 +6,7 @@ layout {
         }
         children
     }
-    tab name="leaves" split_direction="vertical" {
-        pane {
-			command "hx"
-			args "abalone.txt"
-            size "77%"
-		}
-		// pane split_direction="horizontal" {
-		// 	pane command="hx" {
-		// 	}
-		// 	pane split_direction="vertical" command="watch" {
-		// 		args "-n 1"  "-p"  "date \"+'%Y|%m-%d;%H:%M_%S (%Y day:%j/366 week:%U/53 weekday:%u/7 (%A) (%B)'\""
-	 //            size "10%"
-		// 	}
-		// }
-    }
+
     tab name="abalone" split_direction="vertical" {
         pane {
 			command "hx"
@@ -32,6 +18,13 @@ layout {
         pane {
 			command "hx"
 			args "todo_open.txt"
+            size "77%"
+		}
+    }
+    tab name="tempender" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "tempender.txt"
             size "77%"
 		}
     }
