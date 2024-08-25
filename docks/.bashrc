@@ -213,9 +213,13 @@ export PATH=$PATH:$HOME/android/cmdline-tools/latest/bin
 export PATH=$PATH:$HOME/android/platform-tools
 export PATH=$PATH:$HOME/android/emulator
 
+export PATH=$PATH:$HOME/.local/share/solana/install/active_release/bin
+export PATH=$PATH:/home/cupress/.foundry/bin
+
 function md() {
   mkdir $1
   cd $1
 }
 
 source /usr/share/bash-completion/completions/git
+

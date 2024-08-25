@@ -28,4 +28,11 @@ layout {
             size "77%"
 		}
     }
+    tab name="manifest" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "loadout_plus.txt"
+            size "77%"
+		}
+    }
 }
