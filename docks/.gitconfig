@@ -28,6 +28,7 @@
 	somund = sommut --amend -m
 	somand = sommat --amend -m
 	
+	astash =!git add -A && git stash
 	ssgs = show --show-signature -s
 	merse = merge -S
 	rebass = rebase --gpg-sign
