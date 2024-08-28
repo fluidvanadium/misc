@@ -214,7 +214,7 @@ export PATH=$PATH:$HOME/android/platform-tools
 export PATH=$PATH:$HOME/android/emulator
 
 export PATH=$PATH:$HOME/.local/share/solana/install/active_release/bin
-export PATH=$PATH:/home/cupress/.foundry/bin
+export PATH=$PATH:$HOME/.foundry/bin
 
 function md() {
   mkdir $1

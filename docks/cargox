@@ -1,4 +1,8 @@
-cargo clippy --fix --tests --all-features && git somat 'cargo clippy --fix --tests --all-features'
-cargo fmt && git somat 'cargo fmt'
-./utils/trailing-whitespace.sh reject ; git somat 'trailing whitespace clipper'
-
+VARRI=$(git diff)
+if [ ! -n "$VARRI" ]; then
+	cargo clippy --fix --tests --all-features && git somat 'cargo clippy --fix --tests --all-features'
+	cargo fmt && git somat 'cargo fmt'
+	./utils/trailing-whitespace.sh reject ; git somat 'trailing whitespace clipper'
+else
+    echo "git dirty"
+fi
