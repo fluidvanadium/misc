@@ -218,6 +218,10 @@ bindsym ctrl+shift+XF86AudioRaiseVolume exec amixer set Master 16+
 bindsym ctrl+XF86AudioLowerVolume exec amixer set Master 0
 bindsym ctrl+XF86AudioRaiseVolume exec amixer set Master 65536
 
+bindsym XF86AudioPrev exec $HOME/timestamps/month
+bindsym XF86AudioPlay exec $HOME/timestamps/day
+bindsym XF86AudioNext exec $HOME/timestamps/momento
+
 #
 # Status Bar:
 #
