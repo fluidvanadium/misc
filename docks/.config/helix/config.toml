@@ -20,3 +20,5 @@ display-inlay-hints = true
 g = { o = "jump_backward" }
 L = ":toggle lsp.display-inlay-hints"
 
+[editor.file-picker]
+hidden = false
