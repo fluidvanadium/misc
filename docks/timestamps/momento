@@ -1,1 +1,1 @@
-wl-copy $(date +%d\;%H\:%M_%S)
+wl-copy " $(date +%d\;%H\:%M_%S) "
