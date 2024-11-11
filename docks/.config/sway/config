@@ -198,6 +198,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+bindsym ctrl+shift+Escape output eDP-1 dpms toggle
+
 bindsym XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 8
 bindsym XF86MonBrightnessUp exec sudo $HOME/brightup.sh 8
 bindsym shift+XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 1
@@ -206,6 +208,7 @@ bindsym ctrl+shift+XF86MonBrightnessDown exec sudo $HOME/brightdown.sh 32
 bindsym ctrl+shift+XF86MonBrightnessUp exec sudo $HOME/brightup.sh 32
 bindsym ctrl+XF86MonBrightnessDown exec sudo $HOME/brightset.sh 0
 bindsym ctrl+XF86MonBrightnessUp exec sudo $HOME/brightset.sh 255
+
 bindsym XF86AudioMute exec amixer set Master toggle
 bindsym ctrl+XF86AudioMute exec amixer set Master 65536
 bindsym shift+XF86AudioMute exec amixer set Master 0
