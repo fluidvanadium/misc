@@ -1,1 +1,4 @@
+cargo check
+cargo check --all-features
+cargo check --tests
 cargo check --all-features --tests
