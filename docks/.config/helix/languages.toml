@@ -1,1 +1,31 @@
+[[language]]
+name = "rust"
+scope = "source.rust"
+injection-regex = "rs|rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+shebangs = ["rust-script", "cargo"]
+auto-format = true
+comment-tokens = ["//", "///", "//!"]
+block-comment-tokens = [
+  { start = "/*", end = "*/" },
+  { start = "/**", end = "*/" },
+  { start = "/*!", end = "*/" },
+]
+language-servers = [ "rust-analyzer" ]
+indent = { tab-width = 4, unit = "    " }
+persistent-diagnostic-sources = ["rustc", "clippy"]
 
+[language-server]
+cargo.all-features = "true"
+cargo.allFeatures = "true"
+cargo.command = "rust-analyzer"
+cargo.features = ["benchmarks"]
+config.command = "rust-analyzer"
+config.inlayHints.bindingModeHints.enable = false
+config.inlayHints.closingBraceHints.minLines = 10
+config.inlayHints.closureReturnTypeHints.enable = "with_block"
+config.inlayHints.discriminantHints.enable = "fieldless"
+config.inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+config.inlayHints.typeHints.hideClosureInitialization = false
+rust-analyzer.config = { checkOnSave = { command = "clippy" }, cargo = { allFeatures = true }}
