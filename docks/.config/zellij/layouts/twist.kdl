@@ -13,27 +13,27 @@ layout {
     }
     cus name="soul" cwd="leaves/museum_plan/audience_smyself/source_smyself/soul" {
         pane command="zellij" {
-			args "-l" "soul"
+			args "-n" "soul"
 		}
     }
     cus name="recr" {
         pane command="zellij" {
-			args "-l" "trifold"
+			args "-n" "trifold"
 		}
     }
     cus name="tool" cwd="dotfiles" {
         pane command="zellij" {
-			args "-l" "BRICK"
+			args "-n" "BRICK"
 		}
     }
     cus name="show" cwd="leaves/museum_plan" {
         pane command="zellij" {
-			args "-l" "trifold"
+			args "-n" "trifold"
 		}
     }
     cus name="ZINGO" cwd="ZINGO" {
         pane command="zellij" {
-			args "-l" "ZINGO"
+			args "-n" "ZINGO"
 		}
     }
 }

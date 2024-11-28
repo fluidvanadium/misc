@@ -1,4 +1,4 @@
-live_config_reload = true
+general.live_config_reload = true
 
 [colors.bright]
 black = "#404040"
@@ -54,7 +54,7 @@ y = 0
 [selection]
 save_to_clipboard = false
 
-[shell]
+[terminal.shell]
 args = ["--login", "-c", "zellij -l twist"]
 program = "/bin/bash"
 
