@@ -1,0 +1,1 @@
+wl-copy $(python ~/timestamps/moon_phase.py argumentt)

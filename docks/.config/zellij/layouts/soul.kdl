@@ -14,10 +14,8 @@ layout {
             size "77%"
 		}
     }
-    tab name="ambitions" split_direction="vertical" {
+    tab name="ambitions" split_direction="vertical" cwd="ambitions" {
         pane {
-			command "hx"
-			args "ambitions.txt"
             size "77%"
 		}
     }
@@ -39,6 +37,13 @@ layout {
         pane {
 			command "hx"
 			args "loadout_plus.txt"
+            size "77%"
+		}
+    }
+    tab name="medicalendar" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "medicalendar.txt"
             size "77%"
 		}
     }

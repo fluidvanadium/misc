@@ -55,9 +55,10 @@ input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-input * {
-    xkb_layout "us"
-    xkb_variant "dvorak"
+input type:keyboard {
+    xkb_layout "us,us"
+    xkb_variant "dvorak-intl,basic"
+    xkb_options grp:rctrl_ralt_toggle
 }
 
 ### Key bindings
@@ -221,7 +222,7 @@ bindsym ctrl+shift+XF86AudioRaiseVolume exec amixer set Master 16+
 bindsym ctrl+XF86AudioLowerVolume exec amixer set Master 0
 bindsym ctrl+XF86AudioRaiseVolume exec amixer set Master 65536
 
-bindsym XF86AudioPrev exec $HOME/timestamps/month
+bindsym XF86AudioPrev exec $HOME/timestamps/moon_phase
 bindsym XF86AudioPlay exec $HOME/timestamps/day
 bindsym XF86AudioNext exec $HOME/timestamps/momento
 
