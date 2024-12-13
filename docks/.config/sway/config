@@ -56,8 +56,8 @@ input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
 # Read `man 5 sway-input` for more information about this section.
 
 input type:keyboard {
-    xkb_layout "us,us"
-    xkb_variant "dvorak-intl,basic"
+    xkb_layout "us,us,us"
+    xkb_variant "dvorak-alt-intl,basic,dvorak"
     xkb_options grp:rctrl_ralt_toggle
 }
 
