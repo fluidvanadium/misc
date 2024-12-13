@@ -1,0 +1,87 @@
+partial alphanumeric_keys
+xkb_symbols "chess" {
+
+    include "us(dvorak)"
+    name[Group1]= "Chess-Dvorak";
+    
+    key <TLDE>	{[     grave,    asciitilde,    dead_grave,  dead_tilde ]};
+    key <AE09>	{[         9,    parenleft,     dead_grave,  dead_breve ]};
+    key <AE10>	{[         0,    parenright ]};
+    key <AE11>	{[ bracketleft,  braceleft  ]};
+    key <AE12>	{[bracketright,  braceright,    dead_tilde]};
+
+    key <AD05>	{[         y,    Y          ]};
+    key <AD11>	{[     slash,    question   ]};
+
+    key <BKSL>	{[ backslash,    bar        ]};
+
+    key <AB05>	{[         x,    X          ]};
+    key <AB08>	{[         w,    W          ]};
+    key <AB09>	{[         v,    V          ]};
+    key <AB10>	{[         z,    Z          ]};
+
+    
+    key <AC01>	{[         a,    A          ]};
+    
+    key <AC02>	{[         b,    semicolon  ]};
+    
+    key <AC03>	{[         c,    C          ]};
+    
+    key <AC04>	{[         d,    D          ]};
+    
+    key <AD01>	{[         e,    E          ]};
+    
+    key <AD02>	{[         f,    F          ]};
+    key <AD06>	{[     comma,    less,          dead_cedilla,  dead_caron ]};
+    
+    key <AD03>	{[         g,    G          ]};
+    
+    key <AD04>	{[         h,    H          ]};
+
+    key <AD07>	{[         1,    exclam     ]};
+    key <AE01>	{[    period,    greater,       dead_abovedot,  periodcentered ]};
+
+    key <AD08>	{[         2,    at         ]};
+    key <AE02>	{[apostrophe,    quotedbl,      dead_acute,  dead_diaeresis ]};
+    
+    key <AD09>	{[         3,    numbersign ]};
+    
+    key <AD10>	{[         4,    dollar     ]};
+    key <AE04>	{[         l,    L          ]};
+    
+    key <AC07>	{[         5,    percent    ]};
+    key <AE05>	{[         p,    P          ]};
+    
+    key <AC08>	{[         6,    asciicircum,   dead_circumflex,  dead_circumflex ]};
+    key <AE06>	{[         t,    T          ]};
+
+    key <AC09>	{[         7,    ampersand  ]};
+    
+    key <AC10>	{[         8,    asterisk   ]};
+    key <AE08>	{[	       s,    S          ]};
+
+    key <AB01>	{[         K,    k          ]};
+    
+    key <AB02>	{[         Q,    q          ]};
+    
+    key <AB03>	{[         R,    r          ]};
+    key <AE03>	{[         J,    j          ]};
+    
+    key <AB04>	{[         B,    colon,         dead_ogonek,  dead_doubleacute ]};
+    
+    
+    key <AB06>	{[     equal,    plus       ]};
+    
+    key <AB07>	{[         n,    N          ]};
+    key <AE07>	{[         m,    M          ]};
+    
+    key <AC05>	{[         o,    O          ]};
+    key <AD12>	{[         i,    I          ]};
+    
+    key <AC06>	{[     minus,    underscore ]};
+    key <AC11>	{[         u,    U          ]};
+};
+
+sway input type:keyboard xkb_layout "en" 
+sway input type:keyboard xkb_variant "chess" 
+sway input type:keyboard xkb_variant "dvorak" 
