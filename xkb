@@ -1,3 +1,5 @@
+to /usr/share/X11/xkb/symbols/us
+
 partial alphanumeric_keys
 xkb_symbols "chess" {
 
@@ -16,9 +18,6 @@ xkb_symbols "chess" {
     key <BKSL>	{[ backslash,    bar        ]};
 
     key <AB05>	{[         x,    X          ]};
-    key <AB08>	{[         w,    W          ]};
-    key <AB09>	{[         v,    V          ]};
-    key <AB10>	{[         z,    Z          ]};
 
     
     key <AC01>	{[         a,    A          ]};
@@ -60,28 +59,31 @@ xkb_symbols "chess" {
     key <AC10>	{[         8,    asterisk   ]};
     key <AE08>	{[	       s,    S          ]};
 
-    key <AB01>	{[         K,    k          ]};
-    
-    key <AB02>	{[         Q,    q          ]};
-    
-    key <AB03>	{[         R,    r          ]};
     key <AE03>	{[         J,    j          ]};
     
-    key <AB04>	{[         B,    colon,         dead_ogonek,  dead_doubleacute ]};
-    
-    
-    key <AB06>	{[     equal,    plus       ]};
-    
-    key <AB07>	{[         n,    N          ]};
     key <AE07>	{[         m,    M          ]};
-    
-    key <AC05>	{[         o,    O          ]};
     key <AD12>	{[         i,    I          ]};
     
     key <AC06>	{[     minus,    underscore ]};
     key <AC11>	{[         u,    U          ]};
+    
+    key <AB10>	{[         K,    k          ]};
+    key <AB01>	{[         z,    Z          ]};
+    
+    key <AB09>	{[         Q,    q          ]};
+    key <AB02>	{[         v,    V          ]};
+    
+    key <AB08>	{[         R,    r          ]};
+    key <AB03>	{[         w,    W          ]};
+
+    key <AB07>	{[         B,    colon,         dead_ogonek,  dead_doubleacute ]};
+    key <AB04>	{[         N,    n          ]};
+    
+    key <AB06>	{[     equal,    plus       ]};
+    key <AC05>	{[         o,    O          ]};
 };
 
-sway input type:keyboard xkb_layout "en" 
-sway input type:keyboard xkb_variant "chess" 
-sway input type:keyboard xkb_variant "dvorak" 
+sway input type:keyboard xkb_layout "us" && sway input type:keyboard xkb_variant "dvorak"
+sway input type:keyboard xkb_layout "us" && sway input type:keyboard xkb_variant "chess" 
+
+qwertyuiop[]asdfghjkl;'\zxcvbnm,./b 
