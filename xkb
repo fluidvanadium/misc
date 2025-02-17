@@ -67,20 +67,23 @@ xkb_symbols "chess" {
     key <AC06>	{[     minus,    underscore ]};
     key <AC11>	{[         u,    U          ]};
     
-    key <AB10>	{[         K,    k          ]};
-    key <AB01>	{[         z,    Z          ]};
+    key <AB03>	{[         N,    n          ]};
     
-    key <AB09>	{[         Q,    q          ]};
-    key <AB02>	{[         v,    V          ]};
+    key <AB04>	{[         B,    colon,         dead_ogonek,  dead_doubleacute ]};
     
-    key <AB08>	{[         R,    r          ]};
-    key <AB03>	{[         w,    W          ]};
+    key <AB07>	{[         R,    r          ]};
+    
+    key <AB08>	{[         Q,    q          ]};
 
-    key <AB07>	{[         B,    colon,         dead_ogonek,  dead_doubleacute ]};
-    key <AB04>	{[         N,    n          ]};
+    key <AB09>	{[         K,    k          ]};
     
     key <AB06>	{[     equal,    plus       ]};
-    key <AC05>	{[         o,    O          ]};
+    key <AC05>	{[         O,    o          ]};
+    
+    key <AB01>	{[         z,    Z          ]};
+    key <AB02>	{[         v,    V          ]};
+    key <AB10>	{[         w,    W          ]};
+
 };
 
 sway input type:keyboard xkb_layout "us" && sway input type:keyboard xkb_variant "dvorak"

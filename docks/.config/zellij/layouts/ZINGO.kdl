@@ -4,7 +4,7 @@ layout {
             plugin location="zellij:compact-bar"
         }
 		pane split_direction="vertical" {
-			pane size="50%" cwd="repo-worktrees/zingolibs/stable" command="cargo" {
+			pane size="50%" cwd="repo-worktrees/zingolib" command="cargo" {
 				args "run" "--" "--data-dir=/home/cupress/ZINGO/my_wallets/treasury/"
 			}
 			pane size="50%" split_direction="horizontal" {

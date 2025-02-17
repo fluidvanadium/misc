@@ -47,4 +47,11 @@ layout {
             size "77%"
 		}
     }
+    tab name="food_and_sleep" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "food_sleep.txt"
+            size "77%"
+		}
+    }
 }

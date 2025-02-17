@@ -56,8 +56,8 @@ input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
 # Read `man 5 sway-input` for more information about this section.
 
 input type:keyboard {
-    xkb_layout "us,us,us"
-    xkb_variant "dvorak-alt-intl,basic,dvorak"
+    xkb_layout "us,us,us,us"
+    xkb_variant "dvorak-alt-intl,basic,dvorak,chess"
     xkb_options grp:rctrl_ralt_toggle
 }
 
@@ -225,6 +225,8 @@ bindsym ctrl+XF86AudioRaiseVolume exec amixer set Master 65536
 bindsym XF86AudioPrev exec $HOME/timestamps/moon_phase
 bindsym XF86AudioPlay exec $HOME/timestamps/day
 bindsym XF86AudioNext exec $HOME/timestamps/momento
+
+bindsym ctrl+ exec sudo $HOME/brightset.sh 255
 
 #
 # Status Bar:
