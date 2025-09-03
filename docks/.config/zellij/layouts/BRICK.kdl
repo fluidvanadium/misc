@@ -6,25 +6,25 @@ layout {
         }
         children
     }
-    tab name="root" {
+    tab focus=false name="root" {
         pane {
             command "sudo"
             args "su"
         }
     }
-    tab name="backup" cwd="~" {
-        pane {
-            command "sudo"
-            args "./backup.sh"
-        }
-    }
-    tab name="BRICK" focus=true {
+    tab focus=false name="backup" {
         pane {
             command "hx"
             args "~/brick"
         }
     }
-    tab name="comms" cwd="~" {
+    tab focus=false name="BRICK" {
+        pane {
+            command "hx"
+            args "~/brick"
+        }
+    }
+    tab focus=true name="comms" cwd="~" {
         pane {
             command "brave"
             start_suspended true
@@ -32,6 +32,10 @@ layout {
         pane {
             command "signal-desktop"
             start_suspended true
+        }
+    }
+    tab focus=false name="zellijtabfocusbughack" {
+        pane {
         }
     }
 }

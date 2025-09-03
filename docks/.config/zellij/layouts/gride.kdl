@@ -3,16 +3,16 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
-		pane split_direction="vertical" {
+		pane split_direction="horizontal" {
     		pane size="30%" split_direction="vertical" {
     			pane size="50%"
     			pane size="30%"
     			pane size="30%"
     		}
     		pane size="30%" split_direction="vertical" {
-    			pane size="30%"
+    			pane size="20%"
     			pane size="40%"
-    			pane size="30%"
+    			pane size="40%"
     		}
     		pane split_direction="vertical" {
     			pane size="50%"
