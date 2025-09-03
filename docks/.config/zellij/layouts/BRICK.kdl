@@ -14,8 +14,8 @@ layout {
     }
     tab focus=false name="backup" {
         pane {
-            command "hx"
-            args "~/brick"
+            command "sudo"
+            args "./backup.sh"
         }
     }
     tab focus=false name="BRICK" {
