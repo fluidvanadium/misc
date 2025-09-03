@@ -16,12 +16,7 @@ layout {
 			args "-n" "soul"
 		}
     }
-    cus name="recr" {
-        pane command="zellij" {
-			args "-n" "trifold"
-		}
-    }
-    cus name="tool" cwd="dotfiles" {
+    cus name="tool" cwd="~" {
         pane command="zellij" {
 			args "-n" "BRICK"
 		}
@@ -31,9 +26,9 @@ layout {
 			args "-n" "trifold"
 		}
     }
-    cus name="ZINGO" cwd="ZINGO" {
+    cus name="recr" {
         pane command="zellij" {
-			args "-n" "ZINGO"
+			args "-n" "gride"
 		}
     }
 }

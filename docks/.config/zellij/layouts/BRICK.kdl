@@ -12,16 +12,26 @@ layout {
             args "su"
         }
     }
-    tab name="BRICK" {
+    tab name="backup" cwd="~" {
+        pane {
+            command "sudo"
+            args "./backup.sh"
+        }
+    }
+    tab name="BRICK" focus=true {
         pane {
             command "hx"
             args "~/brick"
         }
     }
-    tab name="backup" cwd="~" {
+    tab name="comms" cwd="~" {
         pane {
-            command "sudo"
-            args "./backup.sh"
+            command "brave"
+            start_suspended true
+        }
+        pane {
+            command "signal-desktop"
+            start_suspended true
         }
     }
 }

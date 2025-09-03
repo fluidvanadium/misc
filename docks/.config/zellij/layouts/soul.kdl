@@ -14,36 +14,10 @@ layout {
             size "77%"
 		}
     }
-    tab name="ambitions" split_direction="vertical" cwd="ambitions" {
-        pane {
-            size "77%"
-		}
-    }
-    tab name="todo_open" split_direction="vertical" {
+    tab name="hormiga" split_direction="vertical" {
         pane {
 			command "hx"
-			args "todo_open.txt"
-            size "77%"
-		}
-    }
-    tab name="tempender" split_direction="vertical" {
-        pane {
-			command "hx"
-			args "tempender.txt"
-            size "77%"
-		}
-    }
-    tab name="manifest" split_direction="vertical" {
-        pane {
-			command "hx"
-			args "loadout_plus.txt"
-            size "77%"
-		}
-    }
-    tab name="medicalendar" split_direction="vertical" {
-        pane {
-			command "hx"
-			args "medicalendar.txt"
+			args "hormiga.txt"
             size "77%"
 		}
     }
@@ -51,6 +25,13 @@ layout {
         pane {
 			command "hx"
 			args "food_sleep.txt"
+            size "77%"
+		}
+    }
+    tab name="planner" split_direction="vertical" {
+        pane {
+			command "hx"
+			args "todo_planner.txt"
             size "77%"
 		}
     }

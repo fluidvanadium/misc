@@ -1,0 +1,3 @@
+nmcli --show-secrets connection show id ID
+
+sudo rm /etc/NetworkManager/system-connections/...

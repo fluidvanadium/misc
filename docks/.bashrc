@@ -166,17 +166,17 @@ function GITCOMMIT {
 }
 function set_color_prompt {
     RC=$?;
-    DATE="\033[1;36m`date "+%s"` \033[0m||"
+    DATE="\033[1;36m`date "+%d;%H:%M_%S"` \033[0m||"
     USERHOSTBRANCH='\033[1;35m$(GITBRANCH)\033[0m\033[1;34m$(GITSTATUS)\033[0m\033[1;21m$(GITCOMMIT)\033[0m'
     if [  ${RC} -eq 0 ]
     then
-        PWDRC='\033[1;32m${PWD}\033[0m\033[1;31m: ${RC} \033[0m\n$'
+        PWDRC='\033[1;32m${PWD}\033[0m\033[1;31m: ${RC} \033[0m'
     else
-        PWDRC='\033[1;31m${PWD}\033[0m RC\033[1;32m: ${RC} \033[0m\n$'
+        PWDRC='\033[1;31m${PWD}\033[0m RC\033[1;32m: ${RC} \033[0m'
     fi
-    LINE0=$DATE' '$USERHOSTBRANCH'\n'
-    LINE2=$PWDRC
-    PS1=$LINE0$LINE2
+    LINE0=$PWDRC
+    LINE1=$DATE' '$USERHOSTBRANCH
+    PS1=$LINE0'\n'$LINE1'\n$'
 
     G=$(git rev-parse --show-toplevel 2> /dev/null)
 }
