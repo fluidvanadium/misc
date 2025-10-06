@@ -1,3 +1,3 @@
-mount /dev/nvme0n1p1 /exp
-rsync --progress -a --copy-links leaves/ /exp/leaves/
-sudo umount /exp
+mount /dev/sda2 drives/chip_disk
+rsync --progress -a --copy-links leaves/ drives/chip_disk/leaves/
+sudo umount /dev/sda2

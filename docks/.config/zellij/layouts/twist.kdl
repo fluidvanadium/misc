@@ -11,11 +11,6 @@ layout {
         }
         children
     }
-    cus name="soul" cwd="leaves/museum_plan/audience_smyself/source_smyself/soul" {
-        pane command="zellij" {
-			args "-n" "soul"
-		}
-    }
     cus name="tool" cwd="~" {
         pane command="zellij" {
 			args "-n" "BRICK"
@@ -24,11 +19,6 @@ layout {
     cus name="show" cwd="leaves/museum_plan/audience_public/og_data" {
         pane command="zellij" {
 			args "-n" "trifold"
-		}
-    }
-    cus name="recr" {
-        pane command="zellij" {
-			args "-n" "gride"
 		}
     }
 }

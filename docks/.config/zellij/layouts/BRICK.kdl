@@ -12,6 +12,13 @@ layout {
             args "su"
         }
     }
+    tab focus=false name="abalone" cwd="leaves/museum_plan/audience_smyself/source_smyself/soul" {
+        pane {
+			command "hx"
+			args "abalone.txt"
+            size "77%"
+		}
+    }
     tab focus=false name="backup" {
         pane {
             command "sudo"
