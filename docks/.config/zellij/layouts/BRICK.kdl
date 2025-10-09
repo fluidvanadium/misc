@@ -19,6 +19,19 @@ layout {
             size "77%"
 		}
     }
+    tab focus=false name="hormigas" cwd="leaves/museum_plan/audience_smyself/source_smyself/soul" {
+        pane {
+			command "hx"
+			args "todo_planner.txt"
+            size "77%"
+		}
+        pane {
+			command "libreoffice"
+			args "daily.ods"
+            size "77%"
+            start_suspended true
+		}
+    }
     tab focus=false name="backup" {
         pane {
             command "sudo"
