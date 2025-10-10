@@ -16,16 +16,14 @@ language-servers = [ "rust-analyzer" ]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
 
-[language-server]
-cargo.all-features = "true"
-cargo.allFeatures = "true"
-cargo.command = "rust-analyzer"
-cargo.features = ["benchmarks"]
-config.command = "rust-analyzer"
-config.inlayHints.bindingModeHints.enable = false
-config.inlayHints.closingBraceHints.minLines = 10
-config.inlayHints.closureReturnTypeHints.enable = "with_block"
-config.inlayHints.discriminantHints.enable = "fieldless"
-config.inlayHints.lifetimeElisionHints.enable = "skip_trivial"
-config.inlayHints.typeHints.hideClosureInitialization = false
-rust-analyzer.config = { checkOnSave = { command = "clippy" }, cargo = { allFeatures = true }}
+# [language-server.rust-analyzer.config.cargo] 
+
+[language-server.rust-analyzer.config] 
+checkOnSave = true
+
+[language-server.rust-analyzer.config.check] 
+command = "clippy"
+allTargets = true
+features = "all"
+extraEnv.RUSTFLAGS = "-Wclippy::pedantic"
+

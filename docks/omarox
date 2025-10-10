@@ -1,7 +1,7 @@
 VARRI=$(git diff)
 if [ ! -n "$VARRI" ]; then
 	cargo clippy --fix --tests --all-features && git somat 'cargo clippy --fix --tests --all-features'
-	cargo clippy --fix --tests --all-features -- -Wclippy:: pedantic && git somat 'cargo clippy --fix --tests --all-features -- -Wclippy:: pedantic '
+	cargo clippy --fix --tests --all-features -- -Wclippy::pedantic && git somat 'cargo clippy --fix --tests --all-features -- -Wclippy::pedantic '
 	cargo fmt && git somat 'cargo fmt'
 	./utils/trailing-whitespace.sh fix ; git somat 'trailing whitespace clipper'
 else
